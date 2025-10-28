@@ -57,7 +57,7 @@ class MaquinaExpendedora:
 
 # --- Lista de productos ---
 productos = [
-    Producto("A1", "Doritos", 3.50, 8),
+    Producto("A1", "Doritos", 3.00, 8),
     Producto("A2", "Lays Clásicas", 3.20, 10),
     Producto("A3", "Cheetos", 3.00, 6),
     Producto("A4", "Inka Kola 500ml", 4.00, 5),
