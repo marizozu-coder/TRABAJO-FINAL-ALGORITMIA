@@ -75,8 +75,6 @@ class MaquinaExpendedora:
             "S/0.20": 0,
             "S/0.10": 0
         }
-
-        # Distribuir de mayor a menor valor
         for valor in [50, 20, 10, 5, 2, 1, 0.50, 0.20, 0.10]:
             while total >= valor:
                 billetes_monedas[f"S/{valor:.2f}"] += 1
@@ -88,7 +86,6 @@ class MaquinaExpendedora:
                 print(f"{m}: {cantidad} unidades")
 
 
-# --- Lista de productos con stock máximo de 20 ---
 productos = [
     Producto("A1", "Doritos", 3.00, 20),
     Producto("A2", "Lays Clasicas", 3.20, 20),
@@ -107,7 +104,6 @@ productos = [
     Producto("B6", "Doña Pepa", 2.80, 20),
 ]
 
-# --- Programa principal ---
 maquina = MaquinaExpendedora(productos)
 
 print("Bienvenido a la Maquina Expendedora")
